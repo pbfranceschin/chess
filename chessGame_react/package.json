@@ -38,7 +38,7 @@
     "zustand": "^3.6.8"
   },
   "scripts": {
-    "start": "node server/app.js | react-scripts start",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && node server/app.js | react-scripts start",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
